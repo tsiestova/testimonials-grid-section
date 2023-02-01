@@ -13,8 +13,10 @@ body {
 }
 
 .card-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  @include breakpoint(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
 }
